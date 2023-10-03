@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+/* import VineListAll from './components/VineListAll'; */
+import VineJokeSearch from './components/VineJokeSearch';
+import VineJoke from './components/VineJoke';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   
+    <h1 className='spacer'>Tim Vine Jokes</h1>
+    <article className='spacer'> <VineJoke /></article>
+    <article> <VineJokeSearch /></article>
+     
   </React.StrictMode>
 );
 
