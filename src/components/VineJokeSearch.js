@@ -1,14 +1,11 @@
-import React, { useState,useEffect } from 'react';
+import React, {useState} from 'react';
 import { getFilteredJokes } from '../VineMachine';
 
 function VineJokeSearch() {
     const [filteredJokes, setFilteredJokes] = useState([]);
     const [filter, setFilter] = useState("");
     
-    useEffect(() => {
-        setFilteredJokes(getFilteredJokes(filter));
-    }, [filter]);
-
+   
     const hightLightMatchedValue = (joke) => {
         let foundIndex = joke.search(new RegExp("\\b" + filter + "\\b", "i"));
         let value = joke.slice(foundIndex, foundIndex + filter.length);
@@ -17,7 +14,9 @@ function VineJokeSearch() {
 
     return <>
         <input type="text"
-            onInput={(e) => setFilter(e.target.value.trim() )}
+            onInput={(e) => 
+            {setFilter(e.target.value.trim());
+             setFilteredJokes(getFilteredJokes(e.target.value.trim()));}}
             placeholder='Search jokes for value'></input>
        
 
