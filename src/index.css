@@ -63,6 +63,7 @@ input[type=text]{
 
 blockquote {
    font-style: italic;
+   height: 50px;
 }
 
 main{
@@ -86,5 +87,8 @@ article{
     margin:10px;
     padding:10px;
     
+  }
+  blockquote{
+    height: 125px;
   }
 }
