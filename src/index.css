@@ -3,16 +3,16 @@
   }
   
   :root {
-    --textColor: #585858;
+    --textColor: black;
   }
   
   body {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
+    font-family: "Verdana", sans-serif;
     text-align: center;
     font-size: 1.15em;
     color: var(--textColor);
     background-color: rgb(247,247,247);
+    margin-top: 20px;
   }
   
   
@@ -32,7 +32,7 @@
  }
   
  .button {
-  background-color: #585858;
+  background-color: black;
   border: none;
   color: white;
   padding: 12px 32px;
@@ -42,12 +42,11 @@
   font-size: 1em;
 }
 
-a { color: #585858;}
-.spacer
-{ margin-bottom:  50px;}
+a { color:black}
+
 
 .button:hover {
-  background-color: rgb(168, 164, 164);
+  background-color: rgb(77, 76, 76);
   color: white;
 }
 
@@ -57,7 +56,7 @@ input[type=text]{
   margin: 8px 0;
    border-radius: 4px;
   margin-right: 10px;
-  border: 0.5px solid #585858;
+  border: 0.5px solid black;
   font-size: 1.05em;
 }
 
@@ -67,12 +66,13 @@ blockquote {
 }
 
 main{
+
+  margin: auto;
+  width: 60vw;
   background-color: white;
-  margin:50px;
-  padding:50px;
-  padding-top: 0;
-  border: 0.5px solid silver;
-  border-radius: 4px;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  
 }
 
 article{
@@ -84,8 +84,8 @@ article{
     width: 90%;
   } 
   main{
-    margin:10px;
-    padding:10px;
+    width: 90vw;
+  
     
   }
   blockquote{
